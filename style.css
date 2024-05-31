@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow-x: hidden;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    padding: 2vw;
+    position: fixed;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    
+}
+
+.container{
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.158);
+    padding: 2vw 6vw;
+    margin-top: 3vw;
+    border-radius: 10px;
+    /* position: fixed; */
+}
+
+/* form{
+    text-align: center;
+} */
+
+.searchBar{
+    width: 60%;
+    padding: 2px 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.7vw;
+}
+
+.addButton{
+    margin-left: 8px;
+    padding: 2px 4px;
+    font-size: 1.7vw;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+.addButton:hover{
+    background-color: rgb(216, 175, 255);
+    color: #fff;
+}
+
+.tasks{
+    width: 100%;
+    height: 80%;
+    /* background-color: gray; */
+    margin-top: 4vw;
+    display: flex;
+    gap: 4vw;
+    flex-wrap: wrap;
+    position: relative; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.tasks::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.task{
+    width: 160px;
+    height: 120px;
+    background-color: #ffffff5e;
+    border-radius: 10px;
+    padding: 3px 7px;
+    /* position: relative; */
+}
+
+.snoContainer{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100px;
+
+}
+
+.snoText{
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.taskDetail .taskTitle{
+    width: 100%;
+    font-size: 2vw;
+    display: flex;
+}
+
+.taskDetail{
+    width: 100%;
+    height: 70%;
+    /* background-color: aqua; */
+    padding: 2px 4px;
+}
+
+.task a{
+    font-size: 1vw;
+}
+
+.taskOptionsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+    padding: 0 7px;
+}
+
+.plus{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 83%;
+    left: 92%;
+    border-radius: 50px;
+    border-style: none;
+    font-size: xx-large;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+}
